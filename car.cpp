@@ -1,3 +1,5 @@
+#include "car.h"
+
 std::istream& operator>>(std::istream& is, Car& car) {
     is >> car.brand_mark >> car.cylinders >> car.power;
     Car::count_objects++;
