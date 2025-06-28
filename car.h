@@ -1,3 +1,5 @@
+#include <iostream>
+#include <string>
 #ifndef CAR_H
 #define CAR_H
 
