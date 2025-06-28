@@ -1,3 +1,5 @@
+#include <iostream>
+#include <string>
 #ifndef LORRY_H
 #define LORRY_H
 
