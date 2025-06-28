@@ -1,3 +1,6 @@
+#ifndef CAR_H
+#define CAR_H
+
 class Car {
 private:
     std::string brand_mark;
@@ -16,3 +19,5 @@ public:
 };
 
 int Car::count_objects = 0;
+
+#endif
