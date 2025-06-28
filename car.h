@@ -1,13 +1,13 @@
 class Car {
 private:
-    std::string торговая_марка;
-    int число_цилиндров;
-    int мощность;
+    std::string brand_mark;
+    int cylinders;
+    int power;
 
     static int count_objects;
 
 public:
-    Car(const std::string& марка, int цилиндры, int мощ) : торговая_марка(марка), число_цилиндров(цилиндры), мощность(мощ) {}
+    Car(const std::string& brand, int cylinders, int pow) : brand_mark(brand), cylinders(cylinders), power(pow) {}
     virtual ~Car() {}
 
     friend int count();
