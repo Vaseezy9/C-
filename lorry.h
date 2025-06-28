@@ -1,9 +1,9 @@
 class Lorry : public Car {
 private:
-    int грузоподъёмность_кузова;
+    int load_capacity;
 
 public:
-    Lorry(const std{string& марка, int цилиндры, int мощ, int грузоподъёмность) : Car(марка, цилиндры, мощ), грузоподъёмность_кузова(грузоподъёмность) {}
+    Lorry(const std{string& brand, int cylinders, int pow, int load capacity) : Car(brand, cylinders, pow), load_capacity(load capacity) {}
     virtual ~Lorry() {}
 
     friend int count();
