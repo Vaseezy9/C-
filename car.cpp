@@ -5,7 +5,7 @@ std::istream& operator>>(std::istream& is, Car& car) {
 }
 
 std::ostream& operator<<(std::ostream& os, const Car& car) {
-    os << brand mark: " << car.brand_mark << std::endl
+    os << "brand mark: " << car.brand_mark << std::endl
        << "cylinders: " << car.cylinders << std::endl
        << "power: " << car.power << std::endl;
     return os;
