@@ -1,12 +1,12 @@
 std::istream& operator>>(std::istream& is, Car& car) {
-    is >> car.торговая_марка >> car.число_цилиндров >> car.мощность;
+    is >> car.brand_mark >> car.cylinders >> car.power;
     Car::count_objects++;
     return is;
 }
 
 std::ostream& operator<<(std::ostream& os, const Car& car) {
-    os << торговая марка: " << car.торговая_марка << std::endl
-       << "число цилиндров: " << car.число_цилиндров << std::endl
-       << "мощность: " << car.мощность << std::endl;
+    os << brand mark: " << car.brand_mark << std::endl
+       << "cylinders: " << car.cylinders << std::endl
+       << "power: " << car.power << std::endl;
     return os;
 }
