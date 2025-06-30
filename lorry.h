@@ -9,7 +9,7 @@ private:
     int load_capacity;
 
 public:
-    Lorry(const std::string& brand, int cylinders, int pow, int load capacity) : Car(brand, cylinders, pow), load_capacity(load capacity) {}
+    Lorry(const std::string& brand, int cylinders, int pow, int load_capacity) : Car(brand, cylinders, pow), load_capacity(load capacity) {}
     virtual ~Lorry() {}
 
     friend int count();
