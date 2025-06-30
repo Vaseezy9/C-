@@ -2,6 +2,7 @@
 #include <string>
 #ifndef LORRY_H
 #define LORRY_H
+#include "car.h"
 
 class Lorry : public Car {
 private:
