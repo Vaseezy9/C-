@@ -18,6 +18,14 @@ public:
     friend int count();
     friend std::istream& operator>>(std::istream& is, Car& car);
     friend std::ostream& operator<<(std::ostream& os, const Car& car);
+
+    std::string getBrandMark() const;
+    void setBrandMark(const std::string& brand);
+    int getCylinders() const;
+    void setCylinders(int cyl);
+    int getPower() const;
+    void setPower(int pow);
+    Car& operator=(const Car& other);
 };
 
 int Car::count_objects = 0;
