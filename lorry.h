@@ -15,6 +15,16 @@ public:
     friend int count();
     friend std::istream& operator>>(std::istream& is, Lorry& lorry);
     friend std::ostream& operator<<(std::ostream& os, const Lorry& lorry);
+
+    std::string getBrandMark() const;
+    void setBrandMark(const std::string& brand);
+    int getCylinders() const;
+    void setCylinders(int cyl);
+    int getPower() const;
+    void setPower(int pow);
+    int getLoadCapacity() const;
+    void setLoadCapacity(int load);
+    Lorry& operator=(const Lorry& other);
 };
 
 #endif
