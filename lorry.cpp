@@ -2,7 +2,6 @@
 
 std::istream& operator>>(std::istream& is, Lorry& lorry) {
     is >> lorry.getBrandMark() >> lorry.getCylinders() >> lorry.getPower() >> lorry.load_capacity;
-    Car::count_objects++;
     return is;
 }
 
@@ -30,7 +29,7 @@ void Lorry::setLoadCapacity(int load) { load_capacity = load; }
 
 Lorry& Lorry::operator=(const Lorry& other) {
     if (this != &other) {
-        *this = static_cast<const Car&>(other);
+        Car::operator=(other);
         load_capacity = other.load_capacity;
     }
     return *this;
